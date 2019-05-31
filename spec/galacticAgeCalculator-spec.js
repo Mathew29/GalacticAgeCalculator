@@ -92,6 +92,13 @@ describe('AgeCalculator', function() {
   })
 });
 
+describe('AgeCalculator', function() {
+  it('should return next Birthday on Mercury', function() {
+    let letsGetAge = new AgeCalculator('1990-05-29');
+    expect(letsGetAge.GetMercuryBirthday()).toEqual('1991-05-29');
+  })
+});
+
 //10764
 //8865 Mercury
 //21640

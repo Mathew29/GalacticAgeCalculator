@@ -26,7 +26,6 @@ _This program will calculate what a person's age would be on different planets._
 |If universal life expectancy is less than your age on MarJupiters then it will return Jupiter years lived passed life expectancy|'1000-05-29'|21.4|
 
 
-
 ## Setup/Installation Requirements
 
 * _Clone Github repository_
