@@ -73,7 +73,6 @@ export class AgeCalculator {
   GetMarsAgeExpectancy()
   {
     let age = this.GetMarsAge();
-    console.log(age);
     const lifeExpect = 65;
     if(lifeExpect > age)
     {
@@ -83,7 +82,6 @@ export class AgeCalculator {
     if(lifeExpect < age)
     {
       let stillKicking = age - lifeExpect;
-      console.log(stillKicking);
       return parseFloat(stillKicking.toFixed(2));
     }
   }
@@ -93,6 +91,24 @@ export class AgeCalculator {
     let earthAge = parseFloat(this.GetAge());
     let jupiterAge = (earthAge / (11.8 * 365));
     return parseFloat(jupiterAge.toFixed(1));
+  }
+
+  GetJupitarAgeExpectancy()
+  {
+    let age = this.GetJupiterAge();
+    console.log(age);
+    const lifeExpect = 65;
+    if(lifeExpect > age)
+    {
+      let yearsLeft = lifeExpect - age;
+      return parseFloat(yearsLeft.toFixed(1));
+    }
+    if(lifeExpect < age)
+    {
+      let stillKicking = age - lifeExpect;
+      console.log(stillKicking);
+      return parseFloat(stillKicking.toFixed(1));
+    }
   }
 
 

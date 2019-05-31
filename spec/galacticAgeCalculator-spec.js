@@ -78,6 +78,20 @@ describe('AgeCalculator', function() {
   })
 });
 
+describe('AgeCalculator', function() {
+  it('should return years until life expectancy on Jupitar has been reached', function() {
+    let letsGetAge = new AgeCalculator('1990-05-29');
+    expect(letsGetAge.GetJupitarAgeExpectancy()).toEqual(62.5);
+  })
+});
+
+describe('AgeCalculator', function() {
+  it('should return years lived past life expectancy on Jupitar', function() {
+    let letsGetAge = new AgeCalculator('1000-05-29');
+    expect(letsGetAge.GetJupitarAgeExpectancy()).toEqual(21.4);
+  })
+});
+
 //10764
 //8865 Mercury
 //21640
