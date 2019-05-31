@@ -21,3 +21,12 @@ describe('AgeCalculator', function() {
     expect(letsGetAge.GetVenusAge()).toEqual(47.84);
   })
 });
+
+describe('AgeCalculator', function() {
+  it('should return age in Mars years', function() {
+    let letsGetAge = new AgeCalculator('1990-05-29');
+    expect(letsGetAge.GetMarsAge()).toEqual(15.67);
+  })
+});
+
+//10764
