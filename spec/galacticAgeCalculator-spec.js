@@ -57,6 +57,13 @@ describe('AgeCalculator', function() {
   })
 });
 
+describe('AgeCalculator', function() {
+  it('should return years lived past life expectancy on Venus', function() {
+    let letsGetAge = new AgeCalculator('1920-05-29');
+    expect(letsGetAge.GetVenusAgeExpectancy()).toEqual(96.4);
+  })
+});
+
 //10764
 //8865 Mercury
 //21640

@@ -62,7 +62,7 @@ export class AgeCalculator {
     {
       let stillKicking = age - lifeExpect;
       console.log(stillKicking);
-      return parseFloat(stillKicking.toFixed(2));
+      return parseFloat(stillKicking.toFixed(1));
     }
   }
 
