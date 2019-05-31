@@ -1,12 +1,15 @@
 export class AgeCalculator {
-  constructor(date, year, month, day) {
+  constructor(date) {
     this.date = new Date(date);
+    this.currentYear = new Date().getUTCFullYear();
   }
 
   GetAge()
   {
     let year = this.date.getUTCFullYear();
-    let daysInYear = year * 365;
+    //find how many years you have been alive
+    let yearsAlive = this.currentYear - year;
+    let daysInYear = yearsAlive * 365;
     let month = this.date.getUTCMonth();
     //Add 1 to month because Date Method months are 0-11
     let daysInMonth = (month + 1) * 30;
