@@ -56,7 +56,7 @@ export class AgeCalculator {
     if(lifeExpect > age)
     {
       let yearsLeft = lifeExpect - age
-      return parseFloat(yearsLeft.toFixed(1));
+      return parseFloat(yearsLeft.toFixed(2));
     }
     if(lifeExpect < age)
     {
