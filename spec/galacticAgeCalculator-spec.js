@@ -64,6 +64,20 @@ describe('AgeCalculator', function() {
   })
 });
 
+describe('AgeCalculator', function() {
+  it('should return years until life expectancy on Mars has been reached', function() {
+    let letsGetAge = new AgeCalculator('1990-05-29');
+    expect(letsGetAge.GetMarsAgeExpectancy()).toEqual();
+  })
+});
+
+describe('AgeCalculator', function() {
+  it('should return years lived past life expectancy on Mars', function() {
+    let letsGetAge = new AgeCalculator('1920-05-29');
+    expect(letsGetAge.GetMarsAgeExpectancy()).toEqual();
+  })
+});
+
 //10764
 //8865 Mercury
 //21640
