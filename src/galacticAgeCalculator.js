@@ -20,11 +20,18 @@ export class AgeCalculator {
 
   GetMercuryAge()
   {
+    let earthAge = parseFloat(this.GetAge());
+    let mercuryAge = (earthAge/ 88);
+    return parseFloat(mercuryAge.toFixed(2));
+  }
+
+  GetVenusAge()
+  {
     console.log(this.GetAge());
     let earthAge = parseFloat(this.GetAge());
     console.log(earthAge);
-    let mercuryAge = (earthAge/ 88);
-    console.log(mercuryAge);
-    return parseFloat(mercuryAge.toFixed(2));
+    let venusAge = (earthAge/ 225);
+    console.log(venusAge);
+    return parseFloat(venusAge.toFixed(2));
   }
 }

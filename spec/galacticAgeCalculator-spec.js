@@ -18,6 +18,6 @@ describe('AgeCalculator', function() {
 describe('AgeCalculator', function() {
   it('should return age in Venus years' function() {
     let letsGetAge = new AgeCalculator('1990-05-29');
-    expect(letsGetAge.GetVenusAge()).toEqual(42.21);
+    expect(letsGetAge.GetVenusAge()).toEqual(47.84);
   })
 });
