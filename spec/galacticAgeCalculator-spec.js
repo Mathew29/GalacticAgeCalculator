@@ -14,3 +14,10 @@ describe('AgeCalculator', function() {
     expect(letsGetAge.GetMercuryAge()).toEqual(100.74);
   });
 });
+
+describe('AgeCalculator', function() {
+  it('should return age in Venus years' function() {
+    let letsGetAge = new AgeCalculator('1990-05-29');
+    expect(letsGetAge.GetVenusAge()).toEqual(42.21);
+  })
+});
