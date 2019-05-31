@@ -29,4 +29,11 @@ describe('AgeCalculator', function() {
   })
 });
 
+describe('AgeCalculator', function() {
+  it('should return age in Jupiter years', function() {
+    let letsGetAge = new AgeCalculator('1990-05-29');
+    expect(letsGetAge.GetJupiterAge()).toEqual(2.5);
+  })
+});
+
 //10764

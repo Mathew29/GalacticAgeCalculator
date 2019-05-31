@@ -34,11 +34,15 @@ export class AgeCalculator {
 
   GetMarsAge()
   {
-    console.log(this.GetAge());
     let earthAge = parseFloat(this.GetAge());
-    console.log(earthAge);
-    let MarsAge = (earthAge/ 687);
-    console.log(MarsAge);
-    return parseFloat(MarsAge.toFixed(2));
+    let marsAge = (earthAge/ 687);
+    return parseFloat(marsAge.toFixed(2));
+  }
+
+  GetJupiterAge()
+  {
+    let earthAge = parseFloat(this.GetAge());
+    let jupiterAge = (earthAge / (11.8 * 365));
+    return parseFloat(jupiterAge.toFixed(1));
   }
 }
