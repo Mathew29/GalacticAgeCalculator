@@ -17,4 +17,14 @@ export class AgeCalculator {
     let ageInDays = daysInYear + daysInMonth + day;
     return ageInDays;
   }
+
+  GetMercuryAge()
+  {
+    console.log(this.GetAge());
+    let earthAge = parseFloat(this.GetAge());
+    console.log(earthAge);
+    let mercuryAge = (earthAge/ 88);
+    console.log(mercuryAge);
+    return parseFloat(mercuryAge.toFixed(2));
+  }
 }
