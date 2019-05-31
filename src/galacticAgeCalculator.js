@@ -93,7 +93,7 @@ export class AgeCalculator {
     return parseFloat(jupiterAge.toFixed(1));
   }
 
-  GetJupitarAgeExpectancy()
+  GetJupiterAgeExpectancy()
   {
     let age = this.GetJupiterAge();
     console.log(age);
