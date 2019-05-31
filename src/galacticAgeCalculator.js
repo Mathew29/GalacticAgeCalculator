@@ -17,25 +17,24 @@ export class AgeCalculator {
     let ageInDays = daysInYear + daysInMonth + day;
     return ageInDays;
   }
-
+  
+  //set Birthday for Earth
   SetBirthday()
   {
     let year = this.date.getUTCFullYear();
-    console.log(year);
     let month = this.date.getUTCMonth();
     let day = this.date.getUTCDate();
-    console.log(day);
     let birthday = new Date((year + 1), month, day);
     return birthday.toISOString().slice(0, 10);
   }
 
+// Mercury Section
   GetMercuryAge()
   {
     let earthAge = parseFloat(this.GetAge());
     let mercuryAge = (earthAge/ 88);
     return parseFloat(mercuryAge.toFixed(2));
   }
-
   GetMercuryAgeExpectancy()
   {
     let age = this.GetMercuryAge();
@@ -52,14 +51,13 @@ export class AgeCalculator {
     }
   }
 
-
+  //Venus Section
   GetVenusAge()
   {
     let earthAge = parseFloat(this.GetAge());
     let venusAge = (earthAge/ 225);
     return parseFloat(venusAge.toFixed(2));
   }
-
   GetVenusAgeExpectancy()
   {
     let age = this.GetVenusAge();
@@ -76,6 +74,7 @@ export class AgeCalculator {
     }
   }
 
+  //Mars Section
   GetMarsAge()
   {
     let earthAge = parseFloat(this.GetAge());
@@ -98,13 +97,13 @@ export class AgeCalculator {
     }
   }
 
+  //Jupiter Section
   GetJupiterAge()
   {
     let earthAge = parseFloat(this.GetAge());
     let jupiterAge = (earthAge / (11.8 * 365));
     return parseFloat(jupiterAge.toFixed(1));
   }
-
   GetJupiterAgeExpectancy()
   {
     let age = this.GetJupiterAge();
@@ -120,7 +119,4 @@ export class AgeCalculator {
       return parseFloat(stillKicking.toFixed(1));
     }
   }
-
-
-
 }
