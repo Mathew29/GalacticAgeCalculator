@@ -25,6 +25,24 @@ export class AgeCalculator {
     return parseFloat(mercuryAge.toFixed(2));
   }
 
+  GetMercuryAgeExpectancy()
+  {
+    let age = this.GetMercuryAge();
+    console.log(age);
+    const lifeExpect = 65;
+    if(lifeExpect > age)
+    {
+      let yearsLeft = lifeExpect - age
+      return parseFloat(yearsLeft.toFixed(1));
+    }
+    if(lifeExpect < age)
+    {
+      let stillKicking = age - lifeExpect;
+      console.log(stillKicking);
+      return parseFloat(stillKicking.toFixed(2));
+    }
+  }
+
   GetVenusAge()
   {
     let earthAge = parseFloat(this.GetAge());
@@ -45,4 +63,7 @@ export class AgeCalculator {
     let jupiterAge = (earthAge / (11.8 * 365));
     return parseFloat(jupiterAge.toFixed(1));
   }
+
+
+
 }

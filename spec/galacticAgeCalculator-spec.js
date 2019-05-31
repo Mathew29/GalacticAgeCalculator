@@ -36,4 +36,20 @@ describe('AgeCalculator', function() {
   })
 });
 
+describe('AgeCalculator', function() {
+  it('should return years until life expectancy on Mercury has been reached', function() {
+    let letsGetAge = new AgeCalculator('2010-3-15');
+    expect(letsGetAge.GetMercuryAgeExpectancy()).toEqual(26.5);
+  })
+});
+
+describe('AgeCalculator', function() {
+  it('should return years lived past life expectancy on Mercury', function() {
+    let letsGetAge = new AgeCalculator('1995-3-15');
+    expect(letsGetAge.GetMercuryAgeExpectancy()).toEqual(35.74);
+  })
+});
+
 //10764
+//8865 Mercury
+//21640
