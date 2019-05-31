@@ -93,9 +93,9 @@ describe('AgeCalculator', function() {
 });
 
 describe('AgeCalculator', function() {
-  it('should return next Birthday on Mercury', function() {
+  it('should return next Birthday', function() {
     let letsGetAge = new AgeCalculator('1990-05-29');
-    expect(letsGetAge.SetMercuryBirthday()).toEqual('1991-05-29');
+    expect(letsGetAge.SetBirthday()).toEqual('1991-05-29');
   })
 });
 

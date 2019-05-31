@@ -18,6 +18,17 @@ export class AgeCalculator {
     return ageInDays;
   }
 
+  SetBirthday()
+  {
+    let year = this.date.getUTCFullYear();
+    console.log(year);
+    let month = this.date.getUTCMonth();
+    let day = this.date.getUTCDate();
+    console.log(day);
+    let birthday = new Date((year + 1), month, day);
+    return birthday.toISOString().slice(0, 10);
+  }
+
   GetMercuryAge()
   {
     let earthAge = parseFloat(this.GetAge());
@@ -40,16 +51,7 @@ export class AgeCalculator {
       return parseFloat(stillKicking.toFixed(2));
     }
   }
-  SetMercuryBirthday()
-  {
-    let year = this.date.getUTCFullYear();
-    console.log(year);
-    let month = this.date.getUTCMonth();
-    let day = this.date.getUTCDate();
-    console.log(day);
-    let birthday = new Date((year + 1), month, day);
-    return birthday.toISOString().slice(0, 10);
-  }
+
 
   GetVenusAge()
   {
