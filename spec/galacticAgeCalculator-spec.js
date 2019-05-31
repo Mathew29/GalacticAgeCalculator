@@ -67,14 +67,14 @@ describe('AgeCalculator', function() {
 describe('AgeCalculator', function() {
   it('should return years until life expectancy on Mars has been reached', function() {
     let letsGetAge = new AgeCalculator('1990-05-29');
-    expect(letsGetAge.GetMarsAgeExpectancy()).toEqual();
+    expect(letsGetAge.GetMarsAgeExpectancy()).toEqual(49.33);
   })
 });
 
 describe('AgeCalculator', function() {
   it('should return years lived past life expectancy on Mars', function() {
-    let letsGetAge = new AgeCalculator('1920-05-29');
-    expect(letsGetAge.GetMarsAgeExpectancy()).toEqual();
+    let letsGetAge = new AgeCalculator('1880-05-29');
+    expect(letsGetAge.GetMarsAgeExpectancy()).toEqual(9.11);
   })
 });
 
