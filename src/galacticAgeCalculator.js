@@ -40,6 +40,16 @@ export class AgeCalculator {
       return parseFloat(stillKicking.toFixed(2));
     }
   }
+  SetMercuryBirthday()
+  {
+    let year = this.date.getUTCFullYear();
+    console.log(year);
+    let month = this.date.getUTCMonth();
+    let day = this.date.getUTCDate();
+    console.log(day);
+    let birthday = new Date((year + 1), month, day);
+    return birthday.toISOString().slice(0, 10);
+  }
 
   GetVenusAge()
   {
@@ -96,7 +106,6 @@ export class AgeCalculator {
   GetJupiterAgeExpectancy()
   {
     let age = this.GetJupiterAge();
-    console.log(age);
     const lifeExpect = 65;
     if(lifeExpect > age)
     {
@@ -106,7 +115,6 @@ export class AgeCalculator {
     if(lifeExpect < age)
     {
       let stillKicking = age - lifeExpect;
-      console.log(stillKicking);
       return parseFloat(stillKicking.toFixed(1));
     }
   }
